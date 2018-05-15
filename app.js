@@ -12,7 +12,7 @@ const userRouter = require('./routes/users');
 const app = express();
 app.use(cors())
 
-mongoose.connect('mongodb://localhost/todo');
+mongoose.connect('mongodb://faizal:todofaizal@ds123770.mlab.com:23770/todofancy');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
